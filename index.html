@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    
+ <!-- Latest compiled and minified CSS -->
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- CSS -->
+	 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <title>Psychic Game</title>
+  </head>
+  
+  <body id="my-game">
+  	<div class="container">
+  		<div class="page-header">
+  			<h1>How Psychic Are You?</h1>
+  		</div>
+  		<div class="row">
+  			<div class="col-md-6 col-s-6 col-xs-6">
+				<div class="instructions">
+  					<h3>Guess a letter!</h3>
+  					<p>If you can guess the letter in my crystal ball, you get a win!  If you don't guess correctly on the first try, no worries -- you get 9 more chances to guess.  And I'll help you out: each turn, you can see the letters that you've already guessed.  If, however, you exhaust all of those chances, you receive a loss.  </p>
+  					<p>Five losses and you lose the game.</p>
+  					<p>Five wins and you WIN THE GAME!</p>
+  				</div>
+  			</div>
+  			<div class="col-md-6 col-s-6 col-xs-6">
+  				<div class="text-right">
+					<img src="assets/images/crystal-ball.GIF" class="img-fluid" alt="responsive-image" height="400px" width="400px">
+				</div>
+			</div>
+		</div>
+  		
+  		<div class="game">
+        <div class="row">
+          <div class="col-md-4 col-s-4 col-xs-4">
+            <h2>Let the game... BEGIN!</h2>
+          </div>
+      <!-- Hard reset button    
+          <div class="col-md-8 col-s-8 col-xs-8">
+            <button type="button" class="btn btn-success" id="game-button">Reset!</button>
+          </div> -->
+        </div>
+  			
+  			<div class="row">
+  				<div class="col-md-4 col-s-4 col-xs-4">
+  					<div class="panel panel-default" id="win-loss">
+  						<div class="row">
+  							<div class="col-md-4 col-s-4 col-xs-4">
+                  <p id="bold-me">Wins:</p>
+                </div>
+                <div class="col-md-8 col-s-8 col-xs-8">
+                  <p id="print-wins"></p>
+  							</div>
+  						</div>
+  						<div class="row">
+  							<div class="col-md-4 col-s-4 col-xs-4">
+                  <p id="bold-me">Losses:</p>
+                </div>
+                <div class="col-md-8 col-s-8 col-xs-8">
+                  <p id="print-losses"></p>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  				<div class="col-md-8 col-s-8 col-xs-8">
+  					<div class="panel panel-default" id="guesses">
+  						<div class="row">
+  							<div class="col-md-4 col-s-4 col-xs-4">
+  								<p id="bold-me">Guesses left:</p>
+  							</div>
+  							<div class="col-md-8 col-s-8 col-xs-8">
+  								<p id="print-guesses"> </p>
+  							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4 col-s-4 col-xs-4">
+								<p id="bold-me">Letters Guessed: </p>
+							</div>
+							<div class="col-md-8 col-s-8 col-xs-8">
+								<p id="letters-guessed"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<small>&copy2017 Nicole Clements</small>
+		</div>
+	</footer>
+
+  <!-- Javascript -->
+  <script src="assets/javascript/game.js">
+  </script>
+
+	</body>
+</html>
